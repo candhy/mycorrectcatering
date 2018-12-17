@@ -1,0 +1,73 @@
+SQL>  create table customer_Details(cateringid varchar2(15),customername varchar2(15),address varchar2(30),phonenumber varchar2(15),payamount number(10));
+
+Table created.
+
+SQL>  create sequence cateringid start with 100;
+Sequence created.
+
+
+SQL> CREATE TABLE comboo(ORDERINGID VARCHAR2(15),COMBONAME VARCHAR2(15),TOTALPRICE NUMBER(10));
+
+Table created.
+
+SQL> CREATE SEQUENCE orderingid;
+
+Sequence created.
+
+SQL> insert into comboo values('1','combo1','300');
+
+1 row created.
+
+SQL> insert into combo0 values('2','combo2','520');
+
+1 row created.
+
+SQL> insert into comboo values('3','combo3','430');
+
+1 row created.
+
+SQL> insert into comboo values('4','combo4','234');
+
+1 row created.
+
+SQL> insert into comboo values('5','combo5','189');
+
+1 row created.
+
+SQL> insert into comboo values('6','combo6','210');
+
+1 row created.
+
+SQL> insert into comboo values('7','combo7','260');
+
+1 row created.
+
+SQL> insert into comboo values('8','combo8','320');
+
+1 row created.
+
+SQL> insert into comboo values('9','combo9','245');
+
+1 row created.
+
+SQL> insert into comboo values('10','combo10','435');
+
+1 row created.
+
+SQL> set linesize 300;
+
+SQL> select *from comboo;
+
+ORDERINGID      COMBONAME       TOTALPRICE
+--------------- --------------- ----------
+1               combo1                 300
+2               combo2                 520
+3               combo3                 430
+4               combo4                 234
+5               combo5                 189
+6               combo6                 210
+7               combo7                 260
+8               combo8                 320
+9               combo9                 245
+10              combo10                435
+10 rows selected.
